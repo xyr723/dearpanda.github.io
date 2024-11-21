@@ -1,0 +1,153 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  background: rgba(191, 191, 191, 0.2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.app-grid{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 2rem;
+}
+
+h1{
+  margin: 0;
+  background: white;
+  line-height: 15vh;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #4CB2CFAA);
+}
+.logo.coffee:hover {
+  filter: drop-shadow(0 0 2em #ab7239);
+}
+.logo.ai:hover {
+  filter: drop-shadow(0 0 2em #054003);
+}
+.logo.transform:hover{
+  filter: drop-shadow(0 0 2em #3b286b);
+}
+.logo.js:hover{
+  filter: drop-shadow(0 0 1em #9b9b9b);
+}
+.logo.achievement:hover {
+  filter: drop-shadow(0 0 1em rgba(60, 206, 235, 0.45));
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 12px;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: 120px;  /* 固定宽度 */
+  height: 120px; /* 固定高度 */
+}
+
+.app-icon img {
+  width: 64px;      /* 固定图标大小 */
+  height: 64px;     /* 固定图标大小 */
+  margin-bottom: 8px;
+  transition: filter 300ms;
+}
+
+/* 恢复 Vite 图标悬停效果 */
+.app-icon:hover img {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+/* 恢复 React 图标旋转和悬停效果 */
+.app-icon img.react {
+  animation: logo-spin infinite 20s linear;
+}
+
+.app-icon:hover img.react {
+  filter: drop-shadow(0 0 2em rgba(63, 134, 191, 0.67));
+}
+
+.app-icon:hover img.coffee {
+  filter: drop-shadow(0 0 2em #ab7239);
+}
+
+.app-icon:hover img.ai {
+  filter: drop-shadow(0 0 2em #054003);
+}
+
+.app-icon img.transform {
+  animation: logo-spin infinite 20s linear;
+}
+
+.app-icon:hover img.transform {
+  filter: drop-shadow(0 0 2em #3b286b);
+}
+
+.app-icon:hover img.js {
+  filter: drop-shadow(0 0 1em #9b9b9b);
+}
+
+.app-icon:hover img.achievement {
+  filter: drop-shadow(0 0 1em rgba(60, 206, 235, 0.45));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 只在用户未开启减少动画选项时显示动画 */
+@media (prefers-reduced-motion: no-preference) {
+  .app-icon img.react {
+    animation: logo-spin infinite 20s linear;
+  }
+}
